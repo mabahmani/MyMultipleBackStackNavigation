@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mymultiplebackstack.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_2"
+            app:destination="@id/navigation_home2"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home2"
+        android:name="com.example.mymultiplebackstack.ui.home.HomeFragment2"
+        android:label="@string/HelloHomeFragment2"
+        tools:layout="@layout/fragment_home2">
+        <action
+            android:id="@+id/action_home3"
+            app:destination="@id/navigation_home3"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home3"
+        android:name="com.example.mymultiplebackstack.ui.home.HomeFragment3"
+        android:label="@string/HelloHomeFragment3"
+        tools:layout="@layout/fragment_home3" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.mymultiplebackstack.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboard2"
+            app:destination="@+id/navigation_dashboard2"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard2"
+        android:name="com.example.mymultiplebackstack.ui.dashboard.DashboardFragment2"
+        android:label="@string/HelloDashboardFragment2"
+        tools:layout="@layout/fragment_dashboard2">
+        <action
+            android:id="@+id/action_dashboard3"
+            app:destination="@+id/navigation_dashboard3"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard3"
+        android:name="com.example.mymultiplebackstack.ui.dashboard.DashboardFragment3"
+        android:label="@string/HelloDashboardFragment3"
+        tools:layout="@layout/fragment_dashboard3" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.mymultiplebackstack.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notifications2"
+            app:destination="@id/navigation_notifications2"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications2"
+        android:name="com.example.mymultiplebackstack.ui.notifications.NotificationsFragment2"
+        android:label="@string/HelloNotificationsFragment2"
+        tools:layout="@layout/fragment_notifications2">
+        <action
+            android:id="@+id/action_notifications3"
+            app:destination="@id/navigation_notifications3"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications3"
+        android:name="com.example.mymultiplebackstack.ui.notifications.NotificationsFragment3"
+        android:label="@string/HelloNotificationsFragment3"
+        tools:layout="@layout/fragment_notifications3" />
+</navigation>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyMultipleBackStack</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="HelloDashboardFragment2">Hello DashboardFragment2</string>
+    <string name="HelloDashboardFragment3">Hello DashboardFragment3</string>
+    <string name="HelloHomeFragment2">Hello HelloHomeFragment2</string>
+    <string name="HelloHomeFragment3">Hello HelloHomeFragment3</string>
+    <string name="HelloNotificationsFragment2">Hello NotificationsFragment2</string>
+    <string name="HelloNotificationsFragment3">Hello NotificationsFragment3</string>
+
+</resources>
