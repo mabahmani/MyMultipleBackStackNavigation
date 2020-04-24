@@ -47,6 +47,7 @@ public class HomeFragment2 extends Fragment {
         });
 
         counterTv = view.findViewById(R.id.counter);
+        counterTv.setText(String.valueOf(counter));
         counterTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
